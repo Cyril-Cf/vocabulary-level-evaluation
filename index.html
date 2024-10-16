@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Vocabulary Level Grader</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="dist/bundle.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="evaluation-section">
+            <h1>Vocabulary Level Evaluation</h1>
+            <p>Enter your text below to evaluate its English vocabulary level:</p>
+            <textarea id="userText" rows="10" cols="50" placeholder="Type your text here..."></textarea>
+            <button id="evaluateButton">Evaluate</button>
+            <div id="result"></div>
+        </div>
+        <div id="interpretation">
+            <h3>Interpretation of Results</h3>
+            <p><strong>Mean Vocabulary Level:</strong> This score indicates the average level of vocabulary used in the text. A lower score means the vocabulary is simpler, while a higher score suggests more complex language.</p>
+            <p><strong>Highest Level:</strong> This represents the highest vocabulary rank found in the text. It shows the most advanced word used, giving insight into the complexity of language in the piece.</p>
+            <p><strong>Grade:</strong> The overall grade indicates the estimated proficiency level required to understand the text. It is derived from the percentage of words in different vocabulary levels, helping gauge the text's accessibility.</p>
+            <h3>CEFR Vocabulary Levels</h3>
+            <div class="level-container">
+                <div class="level" style="flex: 1;"><strong>A1</strong> (Beginner)</div>
+                <div class="level" style="flex: 1;"><strong>A2</strong> (Elementary)</div>
+                <div class="level" style="flex: 1;"><strong>B1</strong> (Intermediate)</div>
+                <div class="level" style="flex: 1;"><strong>B2</strong> (Upper Intermediate)</div>
+                <div class="level" style="flex: 1;"><strong>C1</strong> (Advanced)</div>
+                <div class="level" style="flex: 1;"><strong>C2</strong> (Proficient)</div>
+            </div>
+            <div class="level-description">
+                <p><strong>A1:</strong> Basic phrases and vocabulary.</p>
+                <p><strong>A2:</strong> Familiar topics and simple tasks.</p>
+                <p><strong>B1:</strong> Main points of clear speech and travel situations.</p>
+                <p><strong>B2:</strong> Complex texts and fluent interaction.</p>
+                <p><strong>C1:</strong> Clear, well-structured text production.</p>
+                <p><strong>C2:</strong> Near-native understanding and summarization.</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
